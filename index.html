@@ -10,6 +10,7 @@
 body {width:1000px; margin:auto; background-image:url(images/background.png)} /* background photo */
 h1 {color:orange; font-family:Arial; text-align:center}
 h2 {color: red; text-align:center; font-size: 40px}
+h3 {color: orange;font-size: 30px}
 p {font-weight: bold; font-size: 14px; font-family: arial; color: yellow}
 img {max-width:100%; height:auto}
 header {padding-top:25%;
@@ -20,9 +21,9 @@ nav {text-align:center; padding:12px; background-color:#00FF00}
 main {color:#FFC; background-color:#009; padding:14px}
 footer {color:#800080; background-color##FFFACD; font-size:10px; height:30px; text-align:center}
 #wrapper {background-color: #FFF; border: 2px #009 solid}
-#column1 {background-color:#FFC; width: 60%}
-#column2 {background-color:#FCF; width: 30%}
-.important {color:#c00}
+#column1 {background-color:black; width: 60%}
+#column2 {background-color: red; width: 30%}
+.important {color:#00FF00}
 .highlight {background-color:#c00} /* highlights text */
 </style>
 </head>
@@ -41,10 +42,22 @@ footer {color:#800080; background-color##FFFACD; font-size:10px; height:30px; te
 <h1><id="Welcome">Welcome to my First Web Page</h1>
 <p>Oscar Carrillo is a 21 year old <i>student</i> at State College of Florida. I am a Mexican-American male who has <b>Texas</b> roots, since I was the first <span style="color:red">person</span> in my entire extended family tree to be born in Florida. I grew up playing sports as <b>baseball</b> being my first <i>love</i> but I also played basketball, soccer, and flag football. Since it was a main focus for most my life, I am a <span class="highlight"> big sports fan</span> with my favorite teams being The Tampa Bay Rays, San Antonio Spurs, and Dallas Cowboys.</p><br>
 <img src="images/me.png" alt="Picture of Me"><br>
+<aside> 
+<div id="column1">
+One of my favorite teams is the Dallas Cowboys
+<img src="images/cowboys.jpg" alt="Picture of cowboys logo">
+</div><!--close column1--!>
+</aside>
+<section>
+<div id="column2">
+Another one of my favorite teams is the San Antonio Spurs
+<img src="images/spurs.jpg" alt="Picture of Spurs logo">
+</div><!--close column2--!>
+</section>
 <h2><id="AboutMe">About Me</h2>
 <p class="important">Hello and welcome to my first Web Page. I am in my 6th <i>semester</i> at <b>State College of Florida</b> and my goal is to have a technology-based career. I will reach my <span style="color:green">goal</span> by expanding my knowledge as I have already studied cybersecurity, server engineering/management, database engineering/management, networking, systems analyst tasks, and other technology related topics. The reason I am passionate about chasing a career in some type of technology field is because I view technology as the backbone of the <b>future</b> and would love to have a role in any <i>future</i> improvements as well as maintaining systems that will help assist people in their everyday lives or specializations.</p><br>
 <hr style="width:60%; border:10px solid #039; border-radius:6px">
-<p style="color: purple;font-size: 30px"><i>Good Bye</i>, one of my favorite educational websites is <a href="https://www.coolmathgames.com" target="_blank">COOLMATH</a></p>
+<h3><i>Good Bye</i>, one of my favorite educational websites is <a href="https://www.coolmathgames.com" target="_blank">COOLMATH</a></h3>
 </main>
 <footer>
 <svg width="1000" height="100">
@@ -59,9 +72,8 @@ Contact Me:
 </footer>
 <a href="#Top">
 </div><!--close wrapper--!>
-<br>
 <img src="images/up.png" alt="arrow going up" style="border:0px">
-</body>
 </a>
+</body>
 </html>
 
