@@ -1,0 +1,18 @@
+body {width:1000px; margin:auto; background-image:url(images/background.png)} /* background photo */
+h1 {color:orange; font-family:Arial; text-align:center}
+h2 {color: red; text-align:center; font-size: 40px}
+h3 {color: orange;font-size: 30px}
+p {font-weight: bold; font-size: 14px; font-family: arial; color: yellow}
+img {max-width:100%; height:auto}
+header {padding-top:25%;
+background-image:url('images/banner.jpg');
+background-repeat:no-repeat;
+background-size:cover; background-position:center center; position:relative}
+nav {text-align:center; padding:12px; background-color:#00FF00}
+main {color:#FFC; background-color:#009; padding:14px}
+footer {color:#800080; background-color##FFFACD; font-size:10px; height:30px; text-align:center}
+#wrapper {background-color: #FFF; border: 2px #009 solid}
+#column1 {background-color:black; width: 60%}
+#column2 {background-color: red; width: 30%}
+.important {color:#00FF00}
+.highlight {background-color:#c00} /* highlights text */
