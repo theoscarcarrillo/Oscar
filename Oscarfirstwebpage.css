@@ -3,13 +3,29 @@ h1 {color:orange; font-family:Arial; text-align:center}
 h2 {color: red; text-align:center; font-size: 40px}
 h3 {color: orange;font-size: 30px}
 p {font-weight: bold; font-size: 14px; font-family: arial; color: yellow}
-img {max-width:100%; height:auto}
+img {max-width:100%; height:auto; display:block}
 header {padding-top:25%;
 background-image:url('images/banner.jpg');
 background-repeat:no-repeat;
 background-size:cover; background-position:center center; position:relative}
 nav {text-align:center; padding:12px; background-color:#00FF00}
-main {color:#FFC; background-color:#009; padding:14px}
+nav a:hover {color:red}
+
+nav {width:100%; text-align:center}
+nav a {display:block; width:30%;
+text-decoration: underline overline red wavy;}
+/* display:block = top to bottom */
+nav li {list-style:none}
+nav li a {border:2px #AAA solid; padding:6px}
+@media only screen and (min-width:640px){
+nav a {display:inline}
+/* display:inline = left to right */
+nav li {display:inline; padding:0 18px}
+} /* Close 640 Media Query for larger screens */
+
+main {color:#FFC; background-color:#009; padding:14px; border: 2px red solid}
+aside {width:25%; float:left; text-align:right; padding:14px; box-sizing:border-box}
+section {width:75%; padding:14px; box-sizing:border-box}
 footer {color:#800080; background-color##FFFACD; font-size:10px; height:30px; text-align:center}
 #wrapper {background-color: #FFF; border: 2px #009 solid}
 #column1 {background-color:black; width: 60%}
