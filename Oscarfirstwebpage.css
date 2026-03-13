@@ -2,6 +2,7 @@ body {width:1000px; margin:auto; background-image:url(images/background.png)} /*
 h1 {color:orange; font-family:Arial; text-align:center}
 h2 {color: red; text-align:center; font-size: 40px}
 h3 {color: orange;font-size: 30px}
+h4 {color: #7fff00; font-size: 20px; text-align:center}
 p {font-weight: bold; font-size: 14px; font-family: arial; color: yellow}
 img {max-width:100%; height:auto; display:block}
 header {padding-top:25%;
@@ -11,9 +12,11 @@ background-size:cover; background-position:center center; position:relative}
 nav {text-align:center; padding:12px; background-color:#00FF00}
 nav a:hover {color:red}
 
+nav.selected {color:purple}
+
 figure {width:320px; display:inline-block; margin:15px; text-align:center}
 
-nav {width:115%; text-align:center}
+nav {width:97.5%; text-align:center}
 nav a {display:block; width:30%;
 text-decoration: underline overline red wavy;}
 /* display:block = top to bottom */
@@ -36,3 +39,42 @@ footer {color:#800080; background-color##FFFACD; font-size:10px; height:30px; te
 
 .important {color:#00FF00}
 .highlight {background-color:#c00} /* highlights text */
+
+.box {border:2px red solid}
+
+blockquote:first-letter {font-size:2.0em; font-weight:bold}
+blockquote {text-align:justify}
+
+.info-bar {
+    background-color: black; /* Dark background */
+    color: #fff;            /* Light text */
+    text-align: center;
+    padding: 10px 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    /* Optional: Fixed to top */
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
+}
+
+ #curvedarrow {
+      position: relative;
+      width: 0;
+      height: 0;
+      border-top: 9px solid transparent;
+      border-right: 9px solid red;
+      transform: rotate(10deg);
+    }
+    #curvedarrow:after {
+      content: "";
+      position: absolute;
+      border: 0 solid transparent;
+      border-top: 3px solid red;
+      border-radius: 20px 0 0 0;
+      top: -12px;
+      left: -9px;
+      width: 12px;
+      height: 12px;
+      transform: rotate(45deg);
+    }
