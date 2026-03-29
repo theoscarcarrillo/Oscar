@@ -42,6 +42,8 @@ footer {color:#800080; background-color##FFFACD; font-size:10px; height:30px; te
 
 .box {border:2px red solid}
 
+.required {color:red; font-weight:bold}
+
 blockquote:first-letter {font-size:2.0em; font-weight:bold}
 blockquote {text-align:justify}
 
@@ -78,3 +80,7 @@ blockquote {text-align:justify}
       height: 12px;
       transform: rotate(45deg);
     }
+
+th {color: orange; background-color: black; font-size: 28px; text-align:center}
+table {border:4px solid #00FF00; border-collapse:collapse; padding: 15px; margin-left: auto; margin-right: auto; border-style: dotted; height: 300px}
+td {border: 1px solid #00FF00}
