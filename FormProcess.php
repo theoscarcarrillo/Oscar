@@ -31,14 +31,13 @@ if(isset($_POST['Email'])) {
     $FirstName = $_POST['FirstName']; // required. (Note in Php - variables start with a $)
     $LastName = $_POST['LastName']; // required
     $Gender = $_POST['Gender']; // NOT required	
-    $email = $_POST['Email']; // required
-    $Telephone = $_POST['PhoneNumber']; // required
+    $email_from = $_POST['Email']; // required
+    $PhoneNumber = $_POST['PhoneNumber']; // required
     $Comments = $_POST['Comments']; // NOT required
     $State = $_POST['State']; // NOT required
     $City = $_POST['City']; // NOT required
     $ZipCode = $_POST['ZipCode']; // NOT required
-    $Yes = $_POST['Yes']; // NOT required
-    $No = $_POST['No']; // NOT required
+    $checkbox = $_POST['checkbox']; // NOT required
 
     $email_message = "Form details for yourName@yourDomainName.com below:\n\n"; // the /n simply means New line
      
@@ -51,14 +50,14 @@ if(isset($_POST['Email'])) {
     $email_message .= "First Name: ".clean_string($FirstName)."\n";
     $email_message .= "Last Name: ".clean_string($LastName)."\n";
     $email_message .= "Gender: ".clean_string($Gender)."\n";
-    $email_message .= "Email: ".clean_string($email)."\n";
+    $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Phone Number: ".clean_string($PhoneNumber)."\n";
     $email_message .= "Comments: ".clean_string($Comments)."\n";
     $email_message .= "State: ".clean_string($State)."\n";
     $email_message .= "City: ".clean_string($City)."\n";
     $email_message .= "Zip Code: ".clean_string($ZipCode)."\n";
-    $email_message .= "Yes: ".clean_string($Yes)."\n";
-    $email_message .= "No: ".clean_string($No)."\n";
+    $email_message .= "checkbox: ".clean_string($checkbox)."\n";
+  
 
     // *** Tap [Ctrl] + [F5] to Force Hard Reload/Refresh if you modify the PHP code.
      
