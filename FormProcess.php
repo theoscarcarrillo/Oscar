@@ -34,6 +34,11 @@ if(isset($_POST['Email'])) {
     $email_from = $_POST['Email']; // required
     $Telephone = $_POST['PhoneNumber']; // required
     $Comments = $_POST['Comments']; // NOT required
+    $State = $_POST['State']; // NOT required
+    $City = $_POST['City']; // NOT required
+    $ZipCode = $_POST['ZipCode']; // NOT required
+    $Yes = $_POST['Yes']; // NOT required
+    $No = $_POST['No']; // NOT required
 
     $email_message = "Form details for yourName@yourDomainName.com below:\n\n"; // the /n simply means New line
      
@@ -49,7 +54,12 @@ if(isset($_POST['Email'])) {
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Phone Number: ".clean_string($PhoneNumber)."\n";
     $email_message .= "Comments: ".clean_string($Comments)."\n";
-	
+    $email_message .= "State: ".clean_string($State)."\n";
+    $email_message .= "City: ".clean_string($City)."\n";
+    $email_message .= "Zip Code: ".clean_string($ZipCode)."\n";
+    $email_message .= "Yes: ".clean_string($Yes)."\n";
+    $email_message .= "No: ".clean_string($No)."\n";
+
     // *** Tap [Ctrl] + [F5] to Force Hard Reload/Refresh if you modify the PHP code.
      
 // create email header for recipient showing senders email address as the email from
