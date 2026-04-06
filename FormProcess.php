@@ -31,7 +31,7 @@ if(isset($_POST['Email'])) {
     $FirstName = $_POST['FirstName']; // required. (Note in Php - variables start with a $)
     $LastName = $_POST['LastName']; // required
     $Gender = $_POST['Gender']; // NOT required	
-    $email_from = $_POST['Email']; // required
+    $email = $_POST['Email']; // required
     $Telephone = $_POST['PhoneNumber']; // required
     $Comments = $_POST['Comments']; // NOT required
     $State = $_POST['State']; // NOT required
@@ -51,7 +51,7 @@ if(isset($_POST['Email'])) {
     $email_message .= "First Name: ".clean_string($FirstName)."\n";
     $email_message .= "Last Name: ".clean_string($LastName)."\n";
     $email_message .= "Gender: ".clean_string($Gender)."\n";
-    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Email: ".clean_string($email)."\n";
     $email_message .= "Phone Number: ".clean_string($PhoneNumber)."\n";
     $email_message .= "Comments: ".clean_string($Comments)."\n";
     $email_message .= "State: ".clean_string($State)."\n";
@@ -64,7 +64,7 @@ if(isset($_POST['Email'])) {
      
 // create email header for recipient showing senders email address as the email from
 $headers = 'From: '.$email_from."\r\n". // carriage Return and New line
-'Reply-To: '.$email_from."\r\n" .       // . is for Concatenation
+'Reply-To: '.$email."\r\n" .       // . is for Concatenation
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);
 // @mail($email_copy, $email_subject, $email_message, $headers); 
