@@ -23,6 +23,9 @@
 </ul>
 </nav>
 <main>
+<form name="ContactForm" id="contactform" action="FormProcess.php" method="post">
+<input type="hidden" name="redirect" value="contactsent.html">
+
 <table>
 <tr>
 <th colspan="2">Contact Oscar
@@ -33,7 +36,7 @@
 <span class="required">First Name</span>
 </td>
 <td>
-future text
+<input type="text" name="FirstName" id="FirstName" required>
 </td>
 </tr>
 <tr>
@@ -41,7 +44,7 @@ future text
 <span class="required">Last Name</span>
 </td>
 <td>
-future text
+<input type="text" name="LastName" id="LastName" required>
 </td>
 </tr>
 <tr>
@@ -49,7 +52,7 @@ future text
 City
 </td>
 <td>
-future text
+<input type="text" name="City" id="City">
 </td>
 </tr>
 <tr>
@@ -57,7 +60,19 @@ future text
 State
 </td>
 <td>
-future text
+<select name="State" id="State">
+<option value>None</option>
+<option value="FL" selected>FLorida</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="CA">California</option>
+<option value="TX">Texas</option>
+<option value="NC">North Carolina</option>
+<option value="WI">Wisconsin</option>
+<option value="WY">Wyoming</option>
+</select>
 </td>
 </tr>
 <tr>
@@ -65,7 +80,7 @@ future text
 Zip Code
 </td>
 <td>
-future text
+<input type="text" name="ZipCode" pattern="[0-9]{5}" title="Five digit zip code" id="ZipCode">
 </td>
 </tr>
 <tr>
@@ -73,7 +88,7 @@ future text
 <span class="required">Email</span>
 </td>
 <td>
-future text
+<input type="email" name="email" id="email" required>
 </td>
 </tr>
 <tr>
@@ -81,7 +96,21 @@ future text
 Gender
 </td>
 <td>
-future text
+"M"
+<input type="Radio" name="Gender" id="M" value="M">
+"F"
+<input type="Radio" name="Gender" id="F" value="F">
+</td>
+</tr>
+<tr>
+<td style="text-align:right">
+High school diploma
+</td>
+<td>
+"Yes"
+<input type="Checkbox" name="checkbox" id="Yes" value="Yes">
+"No"
+<input type="Checkbox" name="checkbox" id="No" value="No">
 </td>
 </tr>
 <tr>
@@ -89,7 +118,7 @@ future text
 <span class="required">Phone Number</span>
 </td>
 <td>
-future text
+<input type="phonenumber" name="PhoneNumber id="PhoneNumber" required>
 </td>
 </tr>
 <tr>
@@ -97,18 +126,20 @@ future text
 Comments
 </td>
 <td>
-future text
+<textarea cols="40" placeholder="Enter Feedback Here" rows="4" name="Comments" id="Comments">
+</textarea>
 </td>
 </tr>
 <tr>
 <td style="text-align:right">
-Reset
+<input type="reset" name="Reset" value="Reset">
 </td>
 <td>
-future text
+<input type="sumbit" name="Submit" value="submit">
 </td>
 </tr>
 </table>
+</form>
 </main>
 <footer>
 <svg width="1000" height="140">
