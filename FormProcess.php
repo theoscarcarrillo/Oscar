@@ -73,7 +73,7 @@ $headers = 'From: '.$email_from."\r\n". // carriage Return and New line
 <!-- place your own Contact Sent message or link to a Contact Sent.htm file below -->
 <html>
 <head>
-<meta http-equiv="REFRESH" content="1;url=contactSent.htm">
+<meta http-equiv="REFRESH" content="1;url=contactsent.html">
 </head>
 <body>
 </body>
