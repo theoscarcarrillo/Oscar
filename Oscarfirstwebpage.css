@@ -84,3 +84,7 @@ blockquote {text-align:justify}
 th {color: orange; background-color: black; font-size: 28px; text-align:center}
 table {border:4px solid #00FF00; border-collapse:collapse; padding: 15px; margin-left: auto; margin-right: auto; border-style: dotted; height: 300px}
 td {border: 1px solid #00FF00}
+
+.image-container {position: relative; width: 500px; height: 300px}
+.img-back {position: absolute; z-index: 1; top: 0; left: 0}
+.img-front {position: absolute; z-index: 2; top: 50px;; left: 50px}
